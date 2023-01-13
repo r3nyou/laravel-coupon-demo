@@ -9,6 +9,8 @@ class Voucher extends Model
 {
     use HasFactory;
 
+    protected $guarded = [];
+
     public function prize()
     {
         return $this->belongsTo(Prize::class);
